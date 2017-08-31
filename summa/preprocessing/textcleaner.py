@@ -46,7 +46,7 @@ def set_stemmer_language(language):
 def set_stopwords_by_language(language):
     global STOPWORDS
     words = get_stopwords_by_language(language)
-    STOPWORDS = frozenset(w for w in words.split() if w)
+    STOPWORDS = frozenset(words)
 
 
 def init_textcleanner(language):
